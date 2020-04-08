@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatar}}" mode="cover"></image>
+  <text class="userinfo-nickname">{{username}}</text>  
+</view>
+<view class="container">
+    <view class="page__hd">
+        <view class="page__title">Navigation</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary" bindtap="toggleLoading">A</button>
+        <button class="weui-btn" type="primary" bindtap="changeColor">B</button>
+        <button class="weui-btn" type="primary" bindtap="changeBgColor">C</button>
+    </view>
+</view>
+

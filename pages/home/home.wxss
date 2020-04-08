@@ -1,0 +1,15 @@
+/* pages/home/home.wxss */
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-right: -550rpx;
+  margin-top: -200rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-right: -550rpx;
+  margin-top: -200rpx;
+}

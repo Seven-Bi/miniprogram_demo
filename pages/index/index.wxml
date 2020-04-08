@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class="authBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+      <image class="btnImg" src="../../static/img/auth_icon.png"></image>
+      <view> {{motto}} </view>
+    </button>
+  </view>
+</view>
