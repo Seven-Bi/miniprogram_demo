@@ -1,16 +1,19 @@
 <!--pages/home/home.wxml-->
 <view class="container">
   <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatar}}" mode="cover"></image>
-  <text class="userinfo-nickname">{{username}}</text>  
+  <text class="userinfo-nickname">{{username}}</text>
+  <view class="content_top">
+    <text>
+      上半部会给一个背景就是公司介绍，下半部就是滑动的图片，每张图片是介绍服务， 在下半部图片底部会有一个悬浮的按钮- 领取免费课程 然后直接联系到客服
+    </text>
+  </view>
+  <view class="content_bottom">
+    <scroll-view class="lol" scroll-x="true" enable-flex="true">
+      <image src="../../static/img/qiuqiu.jpg"></image>
+      <image src="../../static/img/qiuqiu.jpg"></image>
+      <image src="../../static/img/qiuqiu.jpg"></image>
+    </scroll-view>
+  </view>
+  <button class="contact_btn" open-type="contact" bindcontact="handleContact">领取免费课程</button>
+  <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
 </view>
-<view class="container">
-    <view class="page__hd">
-        <view class="page__title">Navigation</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <button class="weui-btn" type="primary" bindtap="toggleLoading">A</button>
-        <button class="weui-btn" type="primary" bindtap="changeColor">B</button>
-        <button class="weui-btn" type="primary" bindtap="changeBgColor">C</button>
-    </view>
-</view>
-

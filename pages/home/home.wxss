@@ -3,13 +3,43 @@
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
-  margin-right: -550rpx;
+  margin-right: -580rpx;
   margin-top: -200rpx;
   border-radius: 50%;
 }
 
 .userinfo-nickname {
   color: #aaa;
-  margin-right: -550rpx;
+  margin-right: -580rpx;
   margin-top: -200rpx;
+}
+
+/* pages/imgviewer/imgviewer.wxss */
+.lol {
+  display: flex;
+  white-space: nowrap;
+}
+
+.lol image {
+  display: inline-block;
+  width: 600rpx;
+  height: 600rpx;
+}
+
+.content_top {
+  margin-top: 50rpx;
+  display: flex;
+}
+
+.content_bottom {
+  margin-top: 80rpx;
+  display: flex;
+}
+
+.contact_btn {
+  position: fixed;
+  height: 80rpx;
+  border-radius: 100rpx;
+  background-color: rgb(201, 227, 245);
+  bottom: 180rpx;
 }

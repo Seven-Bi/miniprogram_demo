@@ -7,6 +7,18 @@ Page({
   data: {
     username: '',
     avatar: null,
+    list: [{
+      "text": "课程",
+      "iconPath": "../../static/img/A1.PNG",
+      "selectedIconPath": "../../static/img/A2.PNG",
+      badge: 'New'
+    },
+    {
+      "text": "学生中心",
+      "iconPath": "../../static/img/B1.PNG",
+      "selectedIconPath": "../../static/img/B2.PNG",
+      badge: 'New'
+    }]
   },
 
   /**
@@ -68,6 +80,14 @@ Page({
 
   },
 
+  tabChange(e) {
+    console.log('tab change', e)
+  },
+  
+  handleContact (e) {
+    console.log(e.detail.path)
+    console.log(e.detail.query)
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
