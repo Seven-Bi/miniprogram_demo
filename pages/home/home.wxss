@@ -14,27 +14,20 @@
   margin-top: -200rpx;
 }
 
-/* pages/imgviewer/imgviewer.wxss */
-.lol {
-  display: flex;
-  white-space: nowrap;
-}
-
-.lol image {
-  display: inline-block;
-  width: 600rpx;
-  height: 600rpx;
-}
-
 .content_top {
   margin-top: 50rpx;
   display: flex;
 }
 
-.content_bottom {
-  margin-top: 80rpx;
-  display: flex;
+.list-view {
+  white-space: nowrap;
+  margin-top: 240rpx;
 }
+
+.inner-view {
+  display: inline-block;
+}
+
 
 .contact_btn {
   position: fixed;

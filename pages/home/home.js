@@ -18,7 +18,16 @@ Page({
       "iconPath": "../../static/img/B1.PNG",
       "selectedIconPath": "../../static/img/B2.PNG",
       badge: 'New'
-    }]
+    }],
+    toView: 'LOL',
+    images: ['../../static/img/qiuqiu.jpg', '../../static/img/qiuqiu.jpg', '../../static/img/qiuqiu.jpg']
+  },
+
+  scroll: function (e) {
+    console.log(e);
+    this.setData({
+      toView: 'LOL: ' + e.timeStamp.toString()
+    })
   },
 
   /**

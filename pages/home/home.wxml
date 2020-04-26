@@ -4,16 +4,15 @@
   <text class="userinfo-nickname">{{username}}</text>
   <view class="content_top">
     <text>
-      上半部会给一个背景就是公司介绍，下半部就是滑动的图片，每张图片是介绍服务， 在下半部图片底部会有一个悬浮的按钮- 领取免费课程 然后直接联系到客服
+      {{toView}}
     </text>
   </view>
-  <view class="content_bottom">
-    <scroll-view class="lol" scroll-x="true" enable-flex="true">
-      <image src="../../static/img/qiuqiu.jpg"></image>
-      <image src="../../static/img/qiuqiu.jpg"></image>
-      <image src="../../static/img/qiuqiu.jpg"></image>
-    </scroll-view>
-  </view>
+  <scroll-view class="list-view" scroll-x="true" bindscroll="scroll">
+    <image wx:for="{{images}}" src="{{item}}"></image>
+    <!-- <view class="inner-view" wx:for="{{images}}">
+      <image src="{{item}}"></image>
+    </view> -->
+  </scroll-view>
   <button class="contact_btn" open-type="contact" bindcontact="handleContact">领取免费课程</button>
   <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
 </view>
