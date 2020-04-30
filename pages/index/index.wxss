@@ -1,6 +1,6 @@
 /**index.wxss**/
 .container {
-  background-image: url(https://pbs.twimg.com/media/Daczy83U8AAG1_M?format=jpg&name=medium);
+  background-image: url(https://i.ibb.co/1mPCLxR/demo-bg-JPG.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
